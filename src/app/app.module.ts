@@ -15,6 +15,15 @@ import { ReactiveFormComponent } from './shared/components/forms/reactive-form/r
 import { StepFormComponent } from './shared/components/forms/step-form/step-form.component';
 import { SimpleTableComponent } from './shared/components/table/simple-table/simple-table.component';
 import { OperatorsListComponent } from './pages/operators/operators-list/operators-list.component';
+import { LoginWithSocialMediaComponent } from './shared/components/auth/login/login-with-social-media/login-with-social-media.component';
+import { FacebookLoginComponent } from './shared/components/auth/login/login-with-social-media/login-social-types/facebook-login/facebook-login.component';
+import { GoogleLoginComponent } from './shared/components/auth/login/login-with-social-media/login-social-types/google-login/google-login.component';
+import { AppleLoginComponent } from './shared/components/auth/login/login-with-social-media/login-social-types/apple-login/apple-login.component';
+import { LoginFormComponent } from './shared/components/auth/login/login-form/login-form.component';
+import { ForgetpassComponent } from './shared/components/auth/forgetpass/forgetpass.component';
+import { ReigesterComponent } from './shared/components/auth/reigester/reigester.component';
+import { RegisterFormComponent } from './shared/components/auth/reigester/register-form/register-form.component';
+import { ForgetpassFormComponent } from './shared/components/auth/forgetpass/forgetpass-form/forgetpass-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +38,16 @@ import { OperatorsListComponent } from './pages/operators/operators-list/operato
     ReactiveFormComponent,
     StepFormComponent,
     SimpleTableComponent,
-    OperatorsListComponent
+    OperatorsListComponent,
+    LoginWithSocialMediaComponent,
+    FacebookLoginComponent,
+    GoogleLoginComponent,
+    AppleLoginComponent,
+    LoginFormComponent,
+    ForgetpassComponent,
+    ReigesterComponent,
+    RegisterFormComponent,
+    ForgetpassFormComponent
   ],
   imports: [
     BrowserModule,
