@@ -1,14 +1,17 @@
-import { Subject } from "rxjs";
+import { Subject } from 'rxjs';
 
 export interface AuthForm {
   submit(): void;
 }
+
 export interface EmailAuthForm {
   email: string;
+  validateEmail(): boolean;
 }
 
 export interface UserNameAuthForm {
   username: string;
+  validateUsername(): boolean;
 }
 
 export interface MobileAuthForm {
@@ -37,4 +40,3 @@ export interface registerInterface extends AuthForm {
 export interface AngularLoginInterface extends LoginInterface {
   destroy$: Subject<boolean>;
 }
-

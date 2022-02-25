@@ -16,6 +16,9 @@ export abstract class LoginFormComponentClass
     this.destroy$ = new Subject();
     this.password = '';
   }
+  validateEmail(): boolean {
+    throw new Error('Method not implemented.');
+  }
 
   loading: boolean;
   email: string = '';
